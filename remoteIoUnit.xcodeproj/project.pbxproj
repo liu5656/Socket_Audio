@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A0671051D2C099200CF9FFB /* love.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A0671041D2C099200CF9FFB /* love.mp3 */; };
+		2AAF52DB1D2BF61E00B808F3 /* AudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF52DA1D2BF61E00B808F3 /* AudioViewController.m */; };
 		2AEF77341D2B957300FCE915 /* ServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF77331D2B957300FCE915 /* ServerViewController.m */; };
 		328C83611CEEF0BA00F06ED3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 328C83601CEEF0BA00F06ED3 /* main.m */; };
 		328C83641CEEF0BA00F06ED3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 328C83631CEEF0BA00F06ED3 /* AppDelegate.m */; };
@@ -39,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A0671041D2C099200CF9FFB /* love.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = love.mp3; sourceTree = "<group>"; };
+		2AAF52D91D2BF61E00B808F3 /* AudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioViewController.h; sourceTree = "<group>"; };
+		2AAF52DA1D2BF61E00B808F3 /* AudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioViewController.m; sourceTree = "<group>"; };
 		2AEF77321D2B957300FCE915 /* ServerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerViewController.h; sourceTree = "<group>"; };
 		2AEF77331D2B957300FCE915 /* ServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerViewController.m; sourceTree = "<group>"; };
 		328C835C1CEEF0BA00F06ED3 /* remoteIoUnit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = remoteIoUnit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,10 +128,13 @@
 				328C83661CEEF0BA00F06ED3 /* ViewController.m */,
 				2AEF77321D2B957300FCE915 /* ServerViewController.h */,
 				2AEF77331D2B957300FCE915 /* ServerViewController.m */,
+				2AAF52D91D2BF61E00B808F3 /* AudioViewController.h */,
+				2AAF52DA1D2BF61E00B808F3 /* AudioViewController.m */,
 				328C83681CEEF0BA00F06ED3 /* Main.storyboard */,
 				328C836B1CEEF0BA00F06ED3 /* Assets.xcassets */,
 				328C836D1CEEF0BA00F06ED3 /* LaunchScreen.storyboard */,
 				328C83701CEEF0BA00F06ED3 /* Info.plist */,
+				2A0671041D2C099200CF9FFB /* love.mp3 */,
 				328C835F1CEEF0BA00F06ED3 /* Supporting Files */,
 				328C83931CEEFA1C00F06ED3 /* InMemoryAudioFile.h */,
 				328C83941CEEFA1C00F06ED3 /* InMemoryAudioFile.m */,
@@ -284,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A0671051D2C099200CF9FFB /* love.mp3 in Resources */,
 				328C836F1CEEF0BA00F06ED3 /* LaunchScreen.storyboard in Resources */,
 				328C836C1CEEF0BA00F06ED3 /* Assets.xcassets in Resources */,
 				328C836A1CEEF0BA00F06ED3 /* Main.storyboard in Resources */,
@@ -364,6 +373,7 @@
 				328C83641CEEF0BA00F06ED3 /* AppDelegate.m in Sources */,
 				328C83611CEEF0BA00F06ED3 /* main.m in Sources */,
 				2AEF77341D2B957300FCE915 /* ServerViewController.m in Sources */,
+				2AAF52DB1D2BF61E00B808F3 /* AudioViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,7 +520,7 @@
 				INFOPLIST_FILE = remoteIoUnit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-2.remoteIoUnit";
+				PRODUCT_BUNDLE_IDENTIFIER = xxxxfadfadfadsf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -523,7 +533,7 @@
 				INFOPLIST_FILE = remoteIoUnit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-2.remoteIoUnit";
+				PRODUCT_BUNDLE_IDENTIFIER = xxxxfadfadfadsf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
