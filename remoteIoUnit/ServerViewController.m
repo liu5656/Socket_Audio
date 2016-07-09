@@ -48,7 +48,7 @@
     GCDAsyncSocket *serverSocket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_global_queue(0, 0)];
     
     NSError *error = nil;
-    [serverSocket acceptOnPort:7789 error:&error];
+    [serverSocket acceptOnPort:10000 error:&error];
     if (!error) {
         NSLog(@"服务端已经开启");
     } else {
@@ -74,8 +74,21 @@
 -(void)socket:(GCDAsyncSocket *)clientSocket didReadData:(NSData *)data withTag:(long)tag
 {
     
+    NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSLog(@"长度:%lu--数据:%@",(unsigned long)data.length, str);
+    NSArray *tempArray = [str componentsSeparatedByString:@"|"];
+    NSString *symbol = tempArray.firstObject;
+    
     [clientSocket readDataWithTimeout:-1 tag:0];
-    [self openAudioFromQueue:data.bytes dataSize:data.length];
+//    [self openAudioFromQueue:data.bytes dataSize:data.length];
+    
+    if ([@"CK" isEqualToString:symbol]) {
+        NSLog(@"收到心跳包");
+        [clientSocket writeData:[@"00" dataUsingEncoding:NSUTF8StringEncoding] withTimeout:-1 tag:12];
+        return;
+    }
+    
+    [clientSocket writeData:[@"00" dataUsingEncoding:NSUTF8StringEncoding] withTimeout:-1 tag:12];
 }
 
 - (void)didReceiveMemoryWarning {

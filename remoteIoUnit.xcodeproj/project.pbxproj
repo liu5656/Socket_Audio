@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2A0671051D2C099200CF9FFB /* love.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A0671041D2C099200CF9FFB /* love.mp3 */; };
 		2AAF52DB1D2BF61E00B808F3 /* AudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF52DA1D2BF61E00B808F3 /* AudioViewController.m */; };
+		2AE587B61D2DF89900F21B66 /* AudioSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE587B51D2DF89900F21B66 /* AudioSessionViewController.m */; };
 		2AEF77341D2B957300FCE915 /* ServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AEF77331D2B957300FCE915 /* ServerViewController.m */; };
 		328C83611CEEF0BA00F06ED3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 328C83601CEEF0BA00F06ED3 /* main.m */; };
 		328C83641CEEF0BA00F06ED3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 328C83631CEEF0BA00F06ED3 /* AppDelegate.m */; };
@@ -44,6 +45,8 @@
 		2A0671041D2C099200CF9FFB /* love.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = love.mp3; sourceTree = "<group>"; };
 		2AAF52D91D2BF61E00B808F3 /* AudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioViewController.h; sourceTree = "<group>"; };
 		2AAF52DA1D2BF61E00B808F3 /* AudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioViewController.m; sourceTree = "<group>"; };
+		2AE587B41D2DF89900F21B66 /* AudioSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioSessionViewController.h; sourceTree = "<group>"; };
+		2AE587B51D2DF89900F21B66 /* AudioSessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioSessionViewController.m; sourceTree = "<group>"; };
 		2AEF77321D2B957300FCE915 /* ServerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerViewController.h; sourceTree = "<group>"; };
 		2AEF77331D2B957300FCE915 /* ServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerViewController.m; sourceTree = "<group>"; };
 		328C835C1CEEF0BA00F06ED3 /* remoteIoUnit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = remoteIoUnit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +133,8 @@
 				2AEF77331D2B957300FCE915 /* ServerViewController.m */,
 				2AAF52D91D2BF61E00B808F3 /* AudioViewController.h */,
 				2AAF52DA1D2BF61E00B808F3 /* AudioViewController.m */,
+				2AE587B41D2DF89900F21B66 /* AudioSessionViewController.h */,
+				2AE587B51D2DF89900F21B66 /* AudioSessionViewController.m */,
 				328C83681CEEF0BA00F06ED3 /* Main.storyboard */,
 				328C836B1CEEF0BA00F06ED3 /* Assets.xcassets */,
 				328C836D1CEEF0BA00F06ED3 /* LaunchScreen.storyboard */,
@@ -368,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AE587B61D2DF89900F21B66 /* AudioSessionViewController.m in Sources */,
 				328C83951CEEFA1C00F06ED3 /* InMemoryAudioFile.m in Sources */,
 				328C83671CEEF0BA00F06ED3 /* ViewController.m in Sources */,
 				328C83641CEEF0BA00F06ED3 /* AppDelegate.m in Sources */,
