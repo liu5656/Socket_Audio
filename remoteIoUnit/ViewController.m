@@ -12,15 +12,12 @@
 #import "AsyncUdpSocket.h"
 #import "AsyncSocket.h"
 #import <AVFoundation/AVFoundation.h>
-#import <OpenAL/OpenAL.h>
 
+/**
+ *  模拟socket客户端,不断向socket服务端发送音频数据
+ */
 
 @interface ViewController () <AsyncUdpSocketDelegate,AVCaptureAudioDataOutputSampleBufferDelegate,AsyncSocketDelegate>
-{
-    ALCdevice       *mDevice;
-    ALCcontext      *mContext;
-    ALuint          outSourceID;
-}
 
 @property (strong,nonatomic) AsyncUdpSocket *udpSocket;
 
@@ -102,16 +99,6 @@
     
 }
 
--(void)InitSocket
-{
-    self.udpSocket = [[AsyncUdpSocket alloc] initWithDelegate:self];
-    [self.udpSocket bindToPort:25257 error:nil];
-    
-    NSError *error;
-    
-    [self.udpSocket enableBroadcast:YES error:&error];
-    [self.udpSocket receiveWithTimeout:-1 tag:100];
-}
 
 -(void)onUdpSocket:(AsyncUdpSocket *)sock didNotSendDataWithTag:(long)tag dueToError:(NSError *)error
 {

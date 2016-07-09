@@ -6,6 +6,11 @@
 //  Copyright © 2016年 王凡. All rights reserved.
 //
 
+
+/**
+ *  @return 测试用来播放PCM文件的
+ */
+
 #import "AudioViewController.h"
 #import <AudioToolbox/AudioToolbox.h>
 

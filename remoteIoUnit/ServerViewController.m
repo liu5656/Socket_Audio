@@ -12,6 +12,10 @@
 #import <AVFoundation/AVFoundation.h>
 #import <OpenAL/OpenAL.h>
 
+/**
+ *  测试用来当做socket服务器,不断接受PCM音频数据,然后通过openAL播放
+ */
+
 @interface ServerViewController ()<GCDAsyncSocketDelegate>
 {
     ALCdevice       *mDevice;
